@@ -1,0 +1,12 @@
+# tools, IDEs, build folders
+/.coverage/
+/.eggs/
+/.idea/
+/.tox/
+/build/
+/dist/
+/docs/build/
+/*.egg-info/
+
+# Django and Python
+*.py[cod]
