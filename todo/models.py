@@ -88,3 +88,12 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.snippet
+
+
+@python_2_unicode_compatible
+class Inventory(models.Model):
+    date = models.DateTimeField(default=datetime.datetime.now)
+    name = models.CharField(max_length=140)
+
+    def __str__(self):
+        return self.name
