@@ -97,3 +97,12 @@ class Inventory(models.Model):
 
     def __str__(self):
         return self.name
+
+
+@python_2_unicode_compatible
+class InventoryItem(models.Model):
+    date = models.DateTimeField(default=datetime.datetime.now)
+    item = models.CharField(max_length=140)
+
+    def __str__(self):
+        return self.item
