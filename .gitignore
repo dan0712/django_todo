@@ -10,3 +10,6 @@
 
 # Django and Python
 *.py[cod]
+
+node_modules/
+.DS_Store
